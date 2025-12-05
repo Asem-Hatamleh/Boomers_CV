@@ -5,8 +5,8 @@ import numpy as np
 from PIL import Image
 
 # Load YOLO models
-model1 = YOLO("cv/best_8n.pt")
-model2 = YOLO("cv/best_11n.pt")
+model1 = YOLO("best_8n.pt")
+model2 = YOLO("best_11n.pt")
 
 st.title("🔪 Knife Detection (YOLO – Two Model Comparison)")
 
@@ -42,3 +42,4 @@ if uploaded_file:
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
 
     st.image(img_out, caption="Detections", use_column_width=True)
+
