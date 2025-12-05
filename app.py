@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-# Load YOLO models
+# Load YOLO models sdasd
 model1 = YOLO("best_8n.pt")
 model2 = YOLO("best_11n.pt")
 
@@ -42,4 +42,5 @@ if uploaded_file:
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
 
     st.image(img_out, caption="Detections", use_column_width=True)
+
 
